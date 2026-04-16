@@ -97,12 +97,14 @@ button{
     align-items: center;
     gap: 5px;
     transition:.25s;
+        font-weight: 600;
+
     }
 }
 
 .btn{
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     background-color: var(--color-primary-button);
     color: var(--color-white);
     padding: var(--padding-button);
@@ -112,7 +114,7 @@ button{
     gap: 5px;
     transition:.25s;
     border-radius: 30px;
-    font-weight: 700;
+    font-weight: 600;
 
     i{
         font-size: 9px;
@@ -324,7 +326,7 @@ hr{border:#000 1px solid;}
 
 /*          HEADER           */
 .logo {
-	max-width: 150px;
+	max-width: 225px;
 }
 
 .logo img {
@@ -333,25 +335,52 @@ hr{border:#000 1px solid;}
 
 
 .top-nav {
-	background-color: #fff;
-	color: #000;
-	padding: 5px 40px;
+	background-color: var(--color-dark-background);
+	color: #fff;
+	padding: 7px 40px;
 	display: flex;
 	justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    
+    a{
+        font-size: 12px;
+        color: #fff;
+        font-weight: 800;
+    }
 }
 
 .top-links{
     display: flex;
-	gap: 25px;
+	gap: 15px;
     list-style: none;
+    align-items: center;
+    color: var(--color-white);
+    
+
+        a{
+        color: var(--color-white);
+        font-weight: 400 !important;
+        }
+
+    ul{
+        list-style: none;
+    }
+
+    i{
+        background-color: #001E72;
+        padding: 15px;
+    }
 }
 
-.top-links a{
-	color: #000;
+.top-nav-right{
+    display: flex;
+    gap: 15px;
 }
 
 .bottom-links{
 	gap: 25px;
+    align-items: center;
 }
 
 .bottom-links a{
@@ -372,6 +401,15 @@ hr{border:#000 1px solid;}
 	padding: 10px 40px;
 	gap: 25px;
 	background-color: black;
+}
+
+.bottom-nav-right{
+    display: flex;
+    align-items: center;
+ justify-content: flex-end;
+ width: 75%;
+ gap: 25px;
+
 }
 
 
@@ -594,10 +632,23 @@ div#submit-btn{
 /*-------- FOOTER STYLES ----------------*/
 footer{
     font-family: var(--font-body);
+    background: var(--color-dark-background);
 
     ul{
         list-style-type: none;
+        line-height: 1.5;
     }
+
+    a{
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    a,p, span{
+        color: var(--color-white);
+    }
+
+ 
 
 }
 
@@ -605,7 +656,7 @@ footer{
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    padding: 25px 40px;
+    padding: 75px 50px;
 }
 
 .footer-logo{
@@ -617,14 +668,20 @@ footer{
 }
 
 .right-footer{
-
+    gap: 75px;
+   span{
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 5px;
+        font-style: bold;
+    }
 }
 
-
-
 .bottom-footer{
-    text-align: right;
-    padding: 10px 40px;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 50px;
 }
 
 /*----INVENTORY STYLES - KEEP AT BOTTOM OF CSS----*/
